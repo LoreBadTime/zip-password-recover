@@ -11,34 +11,22 @@ This is just a test for a ipfs file executable integrity check,however if you ju
 
 # Requirements:
 * Nothing if you wnat to just use the recovery program,it will provide a direct download for 7zip file manager(used by the program tho recover the passwords),no problems if you have it already installed
-* 
 # Requirements for ipfs checking 
 * Ipfs protocol fully installed on your pc and activated during executable execution
 * Rename the executable into "Zip Password Recover.exe",(the program checks even this)
 
 # normal use
-I think ui its pretty self-xplanatory
+I think ui its pretty self-explanatory
 
-![Test Image 2](https://github.com/LoreBadTime/bat-open-with-windows-terminal/blob/main/Scherm%20iniziale.PNG?raw=true)
+![Test Image 2](https://github.com/LoreBadTime/zip-password-recover/blob/main/Cattura2.PNG?raw=true)
 
+# file check test:
+* Activate ipfs protocol (tested on IPFS desktop)
+* Be sure you have the executable named exactly with "Zip Password Recover.exe"
+* start the program
 
+If check doesnt happens then you will find open this window
 
-* in both cases be sure that the father process checkbox is enabled,otherwise everything will run on your /Users/YourName folder, if you create a text file or similar using a .bat file leaving that option unabled can cause file-directory placing problems
+![Test Image 3](https://github.com/LoreBadTime/zip-password-recover/blob/main/Cattura.PNG?raw=true)
 
-
-
-
-# to try if everything worked in my github folder there is a bat file to test Admin/User openings
-
-
-
-Tested only on Windows version 20H2 with latest (1.16) windows terminal preview
-,leave an issue if it worked or if it didn't worked for you
-
-
-#Preview
-
-![Test Image 4](https://github.com/LoreBadTime/bat-open-with-windows-terminal/blob/main/preview1.PNG?raw=true)
-
-
-![Test Image 5](https://github.com/LoreBadTime/bat-open-with-windows-terminal/blob/main/preview%202.PNG?raw=true)
+I will publish the source code if people get interested enough
