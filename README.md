@@ -29,5 +29,3 @@ I think ui its pretty self-explanatory
 If check doesnt happens then you will find open this window
 
 ![Test Image 3](https://github.com/LoreBadTime/zip-password-recover/blob/main/Cattura.PNG?raw=true)
-
-I will publish the source code if people get interested enough
