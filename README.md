@@ -1,5 +1,6 @@
 # Zip-Password-Recover
 Simple zip archieve password recover software
+EXECUTABLE IN RELASES
 
 #DISCLAMER
 * I'm not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed (like it did for me...).
