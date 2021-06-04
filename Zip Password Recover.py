@@ -7,14 +7,34 @@ from tkinter import messagebox
 global root,username
 import re
 from itertools import product
-from subprocess import PIPE,Popen,CREATE_NO_WINDOW
+from subprocess import PIPE,Popen,CREATE_NO_WINDOW,call
 global zip7
 import hashlib
-import ipfshttpclient
 import urllib.request
 import multiaddr.codecs.idna
 import multiaddr.codecs.uint16be
 checkhash = True
+
+def getdependencies():
+    if messagebox.askyesno("Exit", "You need to install ipfshttpclient to run the software,you want to do it now?") == True:
+        try:
+            call("pip install ipfshttpclient==0.8.0a1")
+        except:
+            pass
+        try:
+            import ipfshttpclient
+        except:
+            messagebox.showerror(title="Missing dependencies", message="Cant install requiered libraries,closing the program")
+            exit(code = 404)
+    else:
+        messagebox.showerror(title="Missing dependencies", message="Cant find requiered libraries,closing the program")
+        exit(code = 404)
+        
+try:
+    import ipfshttpclient
+except:
+    getdependencies()
+    
 
 def hash_bytestr_iter(bytesiter, hasher, ashexstr=False):
     for block in bytesiter:
@@ -30,11 +50,10 @@ try:
     hashfolder = []
     for fname in os.listdir():
         try:
-            if fname == "Zip Password Recover.exe":
+            if fname == "Zip Password Recover.py":
                 hashfolder.append((str(hash_bytestr_iter(file_as_blockiter(open(fname, 'rb')), hashlib.sha256()))))
         except:
             pass
-        
     hashfolder = ''.join(hashfolder)
     githublink = []
     for line in urllib.request.urlopen("https://raw.githubusercontent.com/LoreBadTime/zip-password-recover/main/redirector.txt"):
