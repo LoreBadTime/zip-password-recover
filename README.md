@@ -25,7 +25,7 @@ This is just a test for a file integrity check,however if you just want the norm
 * Download and Extract the Zip file from Relase and run "Zip Password Recover.pyw"
 * I think ui its pretty self-explanatory
 
-![Test Image 2](https://github.com/LoreBadTime/zip-password-recover/blob/main/Cattura2.PNG?raw=true)
+![Test Image 2](https://github.com/LoreBadTime/zip-password-recover/blob/main/assets/Cattura2.PNG?raw=true)
 
 # file check test:
 * Be sure you have the executable named exactly with "Zip Password Recover.pyw"
@@ -33,7 +33,7 @@ This is just a test for a file integrity check,however if you just want the norm
 
 If check doesnt happens then you will find open this window
 
-![Test Image 3](https://github.com/LoreBadTime/zip-password-recover/blob/main/Cattura.PNG?raw=true)
+![Test Image 3](https://github.com/LoreBadTime/zip-password-recover/blob/main/assets/Cattura.PNG?raw=true)
 
 
 By LoreBadTime
